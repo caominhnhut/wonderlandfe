@@ -1,1 +1,49 @@
-<p>home works!</p>
+<div class="home">
+    <div class="banners">
+        <div class="banner">
+            <mat-grid-list cols="3" rowHeight="200px" [gutterSize]="'10px'">
+                <mat-grid-tile [colspan]="2" [rowspan]="2">
+                    <div class="banner-img">
+                        <div class="overlay-title-1">
+                            <div class="text">
+                                <p>Up To</p>
+                                <br>
+                                <p>50%</p>
+                            </div>
+                        </div>
+                        <img src="../../assets/banner-1.jpeg">
+                        <div class="overlay-btn">
+                            <button mat-stroked-button class="custom-btn-view-detail">View Detail</button>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <div class="banner-img">
+                        <div class="overlay-title-2">
+                            <div class="text">
+                                <p>NEW</p>
+                            </div>
+                        </div>
+                        <img src="../../assets/banner-2.avif">
+                        <div class="overlay-btn">
+                            <button mat-stroked-button class="custom-btn-view-detail">View Detail</button>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <div class="banner-img">
+                        <div class="overlay-title-2">
+                            <div class="text">
+                                <p>HOT</p>
+                            </div>
+                        </div>
+                        <img src="../../assets/banner-3.jpeg">
+                        <div class="overlay-btn">
+                            <button mat-stroked-button class="custom-btn-view-detail">View Detail</button>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>    
+    </div>
+</div>

@@ -1,2 +1,57 @@
-Hello World
-<app-home></app-home>
+<div class="my-header">
+    <div class="phone">
+        <div class="contact">CALL US: 123-456-7890 7 DAYS A WEEK FROM 8:00 AM TO 10:00 PM</div>
+    </div>
+    <div class="menu">
+        <div class="sub">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
+                    <div class="search-box">
+                        <input type="text"><i class="material-icons">search</i>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <div class="logo">
+                        <img src="../assets/logo.webp">
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <div class="inline">
+                        <a href="#"><mat-icon matBadge="15" matBadgeColor="warn" fontIcon="shopping_cart"></mat-icon></a>
+                    </div>
+                    <div class="inline">
+                        <mat-icon matBadge="10" matBadgeColor="warn" fontIcon="mail" [matMenuTriggerFor]="notification"></mat-icon>
+                        <mat-menu #notification="matMenu">
+                            <button mat-menu-item>notification-1</button>
+                            <button mat-menu-item>notification-2</button>
+                            <button mat-menu-item>notification-3</button>
+                        </mat-menu>
+                    </div>
+                    <div class="inline">
+                        <mat-icon fontIcon="person" [matMenuTriggerFor]="profile"></mat-icon>
+                        <mat-menu #profile="matMenu">
+                            <button mat-menu-item>Profile</button>
+                            <button mat-menu-item>Setting</button>
+                            <button mat-menu-item>Log out</button>
+                        </mat-menu>
+                    </div>
+                    <br class="clearBoth" />
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navi">
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li style="float:right"><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="my-body">
+    <router-outlet></router-outlet>
+</div>
+<div class="my-footer"></div>

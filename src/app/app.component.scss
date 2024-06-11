@@ -1,0 +1,113 @@
+.my-header {
+    height: 200px;
+}
+.my-header .phone {
+    background-color: #FF99FF;
+    height: 50px;
+    position: relative;
+}
+.my-header .phone .contact{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 15px;
+}
+.my-header .menu {
+    height: 70px;
+}
+.my-header .menu .sub{
+    width: 70%;
+    margin: auto;
+}
+.my-header .menu .sub .search-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.my-header .menu .sub .search-box input{
+    height: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 70%;
+    border: 0.5px;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+}
+.my-header .menu .sub .search-box i{
+    font-size: 20px;
+    margin-left: -25px;
+    cursor: pointer;
+    color: #777777;
+}
+.my-header .menu .sub .logo {
+    width: 100%;
+}
+.my-header .menu .sub .logo img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+.my-header .menu .sub .inline{
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    margin-left: 1px;
+    padding-top: 40px;
+}
+.my-header .menu .sub .inline mat-icon{
+    font-size: 30px;
+    color: #888888;
+}
+.my-header .menu .sub .inline mat-icon:hover{
+    color: #555555;
+}
+.my-header .menu .sub .clearBoth{
+    clear: both;
+}
+.my-header .navbar {
+    height: 50px;
+    position: relative;
+    border-top: 0.5px solid #dddddd;
+    border-bottom: 0.5px solid #dddddd;
+}
+.my-header .navbar .navi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.my-header .navbar .navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.my-header .navbar .navi li {
+    float: left;
+    border-right: 0.5px solid #bbb;
+}  
+.my-header .navbar .navi li:last-child {
+    border-right: none;
+}  
+.my-header .navbar .navi li a {
+    display: block;
+    color: #666666;
+    text-align: center;
+    padding: 1px 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.my-header .navbar .navi li a:hover:not(.active) {
+    color: #FF99FF;
+}
+.my-body {
+    height: auto
+}
+.my-footer {
+    background-color: blue;
+    height: 50px;
+}
